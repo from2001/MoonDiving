@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: d494b483da8985f4eab26327d7c222bb
+timeCreated: 1477647240
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BlackMetal
+    100002: BlackMetal_MeshPart0
+    100004: BlackMetal_MeshPart1
+    100006: BlueSolarPanels
+    100008: Insulation
+    100010: //RootNode
+    100012: ISS_SolarPanels
+    100014: MetalPanels
+    100016: polySurface17967
+    100018: Steel
+    100020: Steel1
+    100022: Steel_MeshPart0
+    100024: Steel_MeshPart1
+    100026: Steel_MeshPart2
+    100028: Steel_MeshPart3
+    100030: Steel_MeshPart4
+    100032: sunDirection
+    100034: WhiteMetal
+    100036: WhiteMetal1
+    100038: Solarpanels
+    400000: BlackMetal
+    400002: BlackMetal_MeshPart0
+    400004: BlackMetal_MeshPart1
+    400006: BlueSolarPanels
+    400008: Insulation
+    400010: //RootNode
+    400012: ISS_SolarPanels
+    400014: MetalPanels
+    400016: polySurface17967
+    400018: Steel
+    400020: Steel1
+    400022: Steel_MeshPart0
+    400024: Steel_MeshPart1
+    400026: Steel_MeshPart2
+    400028: Steel_MeshPart3
+    400030: Steel_MeshPart4
+    400032: sunDirection
+    400034: WhiteMetal
+    400036: WhiteMetal1
+    400038: Solarpanels
+    2300000: BlackMetal_MeshPart0
+    2300002: BlackMetal_MeshPart1
+    2300004: BlueSolarPanels
+    2300006: Insulation
+    2300008: ISS_SolarPanels
+    2300010: MetalPanels
+    2300012: polySurface17967
+    2300014: Steel1
+    2300016: Steel_MeshPart0
+    2300018: Steel_MeshPart1
+    2300020: Steel_MeshPart2
+    2300022: Steel_MeshPart3
+    2300024: Steel_MeshPart4
+    2300026: WhiteMetal
+    2300028: WhiteMetal1
+    2300030: Solarpanels
+    3300000: BlackMetal_MeshPart0
+    3300002: BlackMetal_MeshPart1
+    3300004: BlueSolarPanels
+    3300006: Insulation
+    3300008: ISS_SolarPanels
+    3300010: MetalPanels
+    3300012: polySurface17967
+    3300014: Steel1
+    3300016: Steel_MeshPart0
+    3300018: Steel_MeshPart1
+    3300020: Steel_MeshPart2
+    3300022: Steel_MeshPart3
+    3300024: Steel_MeshPart4
+    3300026: WhiteMetal
+    3300028: WhiteMetal1
+    3300030: Solarpanels
+    4300000: ISS_SolarPanels
+    4300002: MetalPanels
+    4300004: BlackMetal_MeshPart0
+    4300006: BlackMetal_MeshPart1
+    4300008: Insulation
+    4300010: WhiteMetal
+    4300012: Steel_MeshPart0
+    4300014: Steel_MeshPart1
+    4300016: Steel_MeshPart2
+    4300018: Steel_MeshPart3
+    4300020: Steel_MeshPart4
+    4300022: WhiteMetal1
+    4300024: Steel1
+    4300026: BlueSolarPanels
+    4300028: polySurface17967
+    4300030: Solarpanels
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
