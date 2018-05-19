@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MoonDivingMain.unity
+    guid: 4cf7af60bfdeb4842b666aaa27cd5f2a
