@@ -5,6 +5,9 @@ using IzanagiLibrary.FSM;
 using System;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// ゲーム実行中用
+/// </summary>
 public class PlayState : IState
 {
     private GameObject targetContainer;
@@ -12,7 +15,7 @@ public class PlayState : IState
 
     public void BeginEnter()
     {
-        SceneManager.LoadScene("MoonDivingMain");     
+        SceneManager.LoadScene("SampleMain");     
     }
 
     public void EndEnter()

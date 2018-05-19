@@ -78,7 +78,7 @@ namespace MoonVR
         // For Debug
         private void LoadMainScene()
         {
-            SceneManager.LoadScene("Sample");
+            SceneManager.LoadScene("SampleMian");
         }
     }
 }
