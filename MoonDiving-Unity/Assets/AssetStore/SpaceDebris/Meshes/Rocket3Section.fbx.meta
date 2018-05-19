@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 903cec13808ef2544b57414b37de4fec
+timeCreated: 1524516354
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BeamFrame
+    100002: Rocket3CollMesh
+    100004: //RootNode
+    100006: RocketGreebles_LOD0
+    100008: RocketGreebles_LOD1
+    100010: RocketGreebles_LOD2
+    100012: RocketGreebles_LOD3
+    100014: RocketNozzles_LOD0
+    100016: RocketNozzles_LOD1
+    100018: RocketNozzles_LOD2
+    100020: RocketNozzles_LOD3
+    100022: RocketPipes_LOD0
+    100024: RocketPipes_LOD1
+    100026: RocketPipes_LOD2
+    100028: RocketPipes_LOD3
+    100030: RocketTanks_LOD0
+    100032: RocketTanks_LOD1
+    100034: RocketTanks_LOD2
+    100036: RocketTanks_LOD3
+    400000: BeamFrame
+    400002: Rocket3CollMesh
+    400004: //RootNode
+    400006: RocketGreebles_LOD0
+    400008: RocketGreebles_LOD1
+    400010: RocketGreebles_LOD2
+    400012: RocketGreebles_LOD3
+    400014: RocketNozzles_LOD0
+    400016: RocketNozzles_LOD1
+    400018: RocketNozzles_LOD2
+    400020: RocketNozzles_LOD3
+    400022: RocketPipes_LOD0
+    400024: RocketPipes_LOD1
+    400026: RocketPipes_LOD2
+    400028: RocketPipes_LOD3
+    400030: RocketTanks_LOD0
+    400032: RocketTanks_LOD1
+    400034: RocketTanks_LOD2
+    400036: RocketTanks_LOD3
+    2100000: No Name
+    2100002: Nozzle
+    2100004: Pipes
+    2300000: BeamFrame
+    2300002: Rocket3CollMesh
+    2300004: RocketGreebles_LOD0
+    2300006: RocketGreebles_LOD1
+    2300008: RocketGreebles_LOD2
+    2300010: RocketGreebles_LOD3
+    2300012: RocketNozzles_LOD0
+    2300014: RocketNozzles_LOD1
+    2300016: RocketNozzles_LOD2
+    2300018: RocketNozzles_LOD3
+    2300020: RocketPipes_LOD0
+    2300022: RocketPipes_LOD1
+    2300024: RocketPipes_LOD2
+    2300026: RocketPipes_LOD3
+    2300028: RocketTanks_LOD0
+    2300030: RocketTanks_LOD1
+    2300032: RocketTanks_LOD2
+    2300034: RocketTanks_LOD3
+    3300000: BeamFrame
+    3300002: Rocket3CollMesh
+    3300004: RocketGreebles_LOD0
+    3300006: RocketGreebles_LOD1
+    3300008: RocketGreebles_LOD2
+    3300010: RocketGreebles_LOD3
+    3300012: RocketNozzles_LOD0
+    3300014: RocketNozzles_LOD1
+    3300016: RocketNozzles_LOD2
+    3300018: RocketNozzles_LOD3
+    3300020: RocketPipes_LOD0
+    3300022: RocketPipes_LOD1
+    3300024: RocketPipes_LOD2
+    3300026: RocketPipes_LOD3
+    3300028: RocketTanks_LOD0
+    3300030: RocketTanks_LOD1
+    3300032: RocketTanks_LOD2
+    3300034: RocketTanks_LOD3
+    4300000: Rocket3CollMesh
+    4300002: RocketNozzles_LOD3
+    4300004: RocketPipes_LOD3
+    4300006: RocketTanks_LOD3
+    4300008: RocketGreebles_LOD3
+    4300010: RocketGreebles_LOD2
+    4300012: RocketTanks_LOD2
+    4300014: RocketPipes_LOD2
+    4300016: RocketNozzles_LOD2
+    4300018: RocketNozzles_LOD1
+    4300020: RocketPipes_LOD1
+    4300022: RocketTanks_LOD1
+    4300024: RocketGreebles_LOD1
+    4300026: RocketGreebles_LOD0
+    4300028: BeamFrame
+    4300030: RocketTanks_LOD0
+    4300032: RocketPipes_LOD0
+    4300034: RocketNozzles_LOD0
+    20500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
