@@ -22,9 +22,10 @@ public class MoonDivingMain : MonoBehaviour {
     bool fadeFlag = false;
     float fadeSpeed = 0.15f;
     GameObject scorePanel;
-    
+    private float HmdRotationDifferenceY=0f;
 
-    void Reset()
+    //初期化
+    void Init()
     {
         //スコアパネルを非表示に
         fadeFlag = false;
@@ -44,6 +45,26 @@ public class MoonDivingMain : MonoBehaviour {
 
         //Player Controllerを無効に
         transform.GetComponent<MoonVR.PlayerController>().enabled = false;
+
+        //Scoreを0に
+        score = 0;
+
+    }
+
+
+    void HmdReset()
+    {
+        //HMDのリセット
+        //高さのリセット
+        var NewY = transform.position.y - Camera.main.transform.position.y;
+        transform.position = new Vector3(transform.position.x, NewY, transform.position.z);
+
+        ////回転のリセット
+        //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 180, transform.localEulerAngles.z);
+        //var NewRotationY = transform.localEulerAngles.y - Camera.main.transform.localEulerAngles.y - HmdRotationDifferenceY;
+        //HmdRotationDifferenceY = NewRotationY;
+        //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, NewRotationY, transform.localEulerAngles.z);
+
     }
 
     void PlayStart()
@@ -64,8 +85,8 @@ public class MoonDivingMain : MonoBehaviour {
 
         scorePanel = GameObject.Find("ScorePanel");
 
-        //初期リセット
-        Reset();
+        //初期化
+        Init();
 
     }
 	
@@ -73,18 +94,23 @@ public class MoonDivingMain : MonoBehaviour {
 	void Update () {
 
 
-        //Enter keyでリセット
+        //Enter keyで初期化、ゲームスタート
         if (Input.GetKeyDown(KeyCode.Return))
         {
             if (transform.GetComponent<MoonVR.PlayerController>().enabled)
             {
-                Reset();
+                Init();
             }
             else
             {
                 PlayStart();
             }
-            
+        }
+
+        //RでHMDポジションリセット
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            HmdReset();
         }
 
 
