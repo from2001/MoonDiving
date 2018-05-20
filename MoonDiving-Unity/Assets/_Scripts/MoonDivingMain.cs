@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class MoonDivingMain : MonoBehaviour {
 
+    [Header("Postprocessing Profile")]
+    public UnityEngine.PostProcessing.PostProcessingProfile ppp;
+
     [Header("スコア")]
     [SerializeField]
     private int score;
@@ -13,10 +16,13 @@ public class MoonDivingMain : MonoBehaviour {
     [SerializeField]
     private int GoalZ = -150;
 
+
+    
+
     bool fadeFlag = false;
     float fadeSpeed = 0.15f;
     GameObject scorePanel;
-    UnityEngine.PostProcessing.PostProcessingBehaviour ppb;
+    
 
     void Reset()
     {
@@ -28,14 +34,35 @@ public class MoonDivingMain : MonoBehaviour {
         scorePanel.SetActive(false);
 
         //Post Processing Stack
-        Camera.main.gameObject.GetComponent<UnityEngine.PostProcessing.PostProcessingBehaviour>().enabled = true;
+        Camera.main.gameObject.GetComponent<UnityEngine.PostProcessing.PostProcessingBehaviour>().profile = ppp;
+
+        //位置をリセット
+        transform.position = new Vector3(0, 0, 0);
+
+        //速度を0に
+        transform.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+
+        //Player Controllerを無効に
+        transform.GetComponent<MoonVR.PlayerController>().enabled = false;
     }
+
+    void PlayStart()
+    {
+        ////Player Controllerを有効に
+        transform.GetComponent<MoonVR.PlayerController>().enabled = true;
+
+        //初期サウンド再生
+        transform.GetComponents<AudioSource>()[0].Play();
+    }
+
+
+
+
 
     // Use this for initialization
     void Start () {
 
         scorePanel = GameObject.Find("ScorePanel");
-        ppb = Camera.main.gameObject.GetComponent<UnityEngine.PostProcessing.PostProcessingBehaviour>();
 
         //初期リセット
         Reset();
@@ -44,6 +71,21 @@ public class MoonDivingMain : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+
+        //Enter keyでリセット
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (transform.GetComponent<MoonVR.PlayerController>().enabled)
+            {
+                Reset();
+            }
+            else
+            {
+                PlayStart();
+            }
+            
+        }
 
 
         //150メートル(シャトルの位置)以上移動したらゴール
@@ -76,9 +118,8 @@ public class MoonDivingMain : MonoBehaviour {
         if (fadeFlag == false)
         {
             scorePanel.SetActive(true);
-            //Camera.main.gameObject.GetComponent<UnityEngine.PostProcessing.PostProcessingBehaviour>().enabled = false;
-            //ppb.enabled = false;
-            ppb.profile = null;
+            Camera.main.gameObject.GetComponent<UnityEngine.PostProcessing.PostProcessingBehaviour>().profile = null;
+
             GameObject.Find("ScoreText").GetComponent<Text>().text = "Your Score is " + score;
             fadeFlag = true;
         }

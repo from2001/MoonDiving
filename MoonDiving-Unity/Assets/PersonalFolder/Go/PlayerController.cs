@@ -54,26 +54,27 @@ namespace MoonVR
         private void Move()
         {
             _rigid.AddForce(Camera.main.transform.forward * _power, ForceMode.Impulse);
+            transform.GetComponents<AudioSource>()[1].Play();
         }
 
 
-        /// <summary>
-        /// tag説明
-        /// CheckPoint : ゲーム中に拾うオブジェクト
-        /// Goal : ゴールとなるオブジェクト
-        /// </summary>
-        /// <param name="other"></param>
-        private void OnTriggerEnter(Collider other)
-        {
-            if(other.CompareTag("CheckPoint"))
-            {
-                Destroy(other.gameObject);
-            }
-            else if(other.CompareTag("Goal"))
-            {
-                LoadMainScene();
-            }
-        }
+        ///// <summary>
+        ///// tag説明
+        ///// CheckPoint : ゲーム中に拾うオブジェクト
+        ///// Goal : ゴールとなるオブジェクト
+        ///// </summary>
+        ///// <param name="other"></param>
+        //private void OnTriggerEnter(Collider other)
+        //{
+        //    if(other.CompareTag("CheckPoint"))
+        //    {
+        //        Destroy(other.gameObject);
+        //    }
+        //    else if(other.CompareTag("Goal"))
+        //    {
+        //        LoadMainScene();
+        //    }
+        //}
 
         // For Debug
         private void LoadMainScene()
